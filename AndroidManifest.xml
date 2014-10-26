@@ -32,6 +32,8 @@
             android:name=".result"></activity>
            <activity 
             android:name=".Listview"></activity>
+              <activity 
+            android:name=".watch_question"></activity>
     </application>
 
 </manifest>
