@@ -30,6 +30,8 @@
             android:name=".answer"></activity>
           <activity 
             android:name=".result"></activity>
+           <activity 
+            android:name=".Listview"></activity>
     </application>
 
 </manifest>
