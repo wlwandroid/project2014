@@ -69,10 +69,6 @@ public class Listview extends Activity{
 			builder.setSingleChoiceItems(new String[]{"查看","修改","删除"}, 0, new OnClickListener(){
 
 				public void onClick(DialogInterface dialog, int which) {
-					
-				if(which==0){//查看
-					//Cursor cursor01=db.query("notepadtable", new String[]{"_id","title","content"}, null, null, null, null, null);
-					
 					int myidindex=cursor.getColumnIndex("_id");
 					myid=cursor.getInt(myidindex);
 					int titleindex=cursor.getColumnIndex("title");
@@ -89,11 +85,14 @@ public class Listview extends Activity{
 					choose_num = cursor.getInt(choose_numindex);
 					int keyindex=cursor.getColumnIndex("key");
 					key = cursor.getInt(keyindex);
+				if(which==0){//查看
+					//Cursor cursor01=db.query("notepadtable", new String[]{"_id","title","content"}, null, null, null, null, null);
 					
-					Toast.makeText(Listview.this, myid+title+content, Toast.LENGTH_LONG).show();	
+				
+					
+					Toast.makeText(Listview.this, myid+title, Toast.LENGTH_LONG).show();	
 				}else if(which==2){//修改
-					int myidindex=cursor.getColumnIndex("_id");
-					myid=cursor.getInt(myidindex);
+					
 
 					db.delete("notepadtable", "_id="+myid, null);
 					
