@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:background="@drawable/green" >
 
     <TextView
         android:id="@+id/q_num"
@@ -10,8 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="39dp"
-        android:textSize="30dp"
-        android:text="Ready? GO"
+        android:text="01"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -22,7 +22,7 @@
         android:layout_below="@+id/q_num"
         android:layout_marginLeft="24dp"
         android:layout_marginTop="30dp"
-        android:text=""
+        android:text="hei hei somelikeithot"
         android:textAppearance="?android:attr/textAppearanceMedium" />
       <LinearLayout
         android:id="@+id/layout2"
@@ -32,29 +32,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="200dp"
         > 
-        <RadioGroup 
-             android:id="@+id/radiogruop"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:orientation="vertical"
-            ></RadioGroup>
     </LinearLayout>
-
-      <Button
-          android:id="@+id/button1"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_alignParentBottom="true"
-          android:layout_centerHorizontal="true"
-          android:layout_marginBottom="39dp"
-          android:text="确定" />
-
-      <TextView
-          android:id="@+id/textView1"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_above="@+id/button1"
-          android:layout_centerHorizontal="true"
-          android:text="" />
 
 </RelativeLayout>

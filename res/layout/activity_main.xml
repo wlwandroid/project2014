@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/horse"
     android:orientation="vertical"
     tools:context=".MainActivity" >
 
@@ -30,14 +31,6 @@
         android:layout_height="wrap_content"
         android:textSize="40dp"
         android:text="回答问题"
-        />
-     <Button 
-        android:id="@+id/btn3"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="40dp"
-        android:text="查看问题"
         />
 
 </LinearLayout>
