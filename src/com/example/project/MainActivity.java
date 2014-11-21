@@ -143,14 +143,14 @@ public class MainActivity extends Activity {
                     StatusList statuses = StatusList.parse(response);
                     if (statuses != null && statuses.total_number > 0) {
                         Toast.makeText(MainActivity.this, 
-                                "鑾峰彇寰崥淇℃伅娴佹垚鍔�, 鏉℃暟: " + statuses.statusList.size(), 
+                                "获取状态成功: " + statuses.statusList.size(), 
                                 Toast.LENGTH_LONG).show();
                     }
                 } else if (response.startsWith("{\"created_at\"")) {
                     // 璋冪敤 Status#parse 瑙ｆ瀽瀛楃涓叉垚寰崥瀵硅薄
                     Status status = Status.parse(response);
                     Toast.makeText(MainActivity.this, 
-                            "鍙戦�佷竴閫佸井鍗氭垚鍔�, id = " + status.id, 
+                            "发送微博成功, id = " + status.id, 
                             Toast.LENGTH_LONG).show();
                 } else {
                     Toast.makeText(MainActivity.this, response, Toast.LENGTH_LONG).show();
@@ -173,7 +173,7 @@ public class MainActivity extends Activity {
             // 濡傛灉鏃堕棿闂撮殧澶т簬2绉�, 涓嶅鐞�  
             if ((currentTime - preTime) > TWO_SECOND) {  
                 // 鏄剧ず娑堟伅  
-                Toast.makeText(this, "鍐嶆鎽佷笅閫�鍑虹▼搴�.",  
+                Toast.makeText(this, "再次按下退出.",  
                         Toast.LENGTH_SHORT).show();  
   
                 // 鏇存柊鏃堕棿  
