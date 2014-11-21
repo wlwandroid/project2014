@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+    android:text="\n您的操作是："
+    android:textSize="20dp"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    />
+    <Button 
+    android:id="@+id/button_01"
+    android:text="排行榜"
+    android:textSize="20dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    />
+    <Button 
+    android:id="@+id/button_02"
+    android:text="广播一下"
+    android:textSize="20dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    />
+    
+    <Button 
+    android:id="@+id/button_03"
+    android:text="邀请指定好友"
+    android:textSize="20dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    />
+    
+    <Button 
+    android:id="@+id/button_04"
+    android:text="删除试卷"
+    android:textSize="20dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    />
+
+</LinearLayout>
