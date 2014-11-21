@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
       android:background="@drawable/nice"
     android:layout_width="match_parent"
@@ -48,7 +48,7 @@
           android:layout_alignParentBottom="true"
           android:layout_centerHorizontal="true"
           android:layout_marginBottom="39dp"
-          android:text="确定" />
+          android:text="确定." />
 
       <TextView
           android:id="@+id/textView1"

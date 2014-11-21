@@ -7,12 +7,12 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:id="@+id/button01"
-      android:text="选择题。"  />
+      android:text="选择题"  />
      <Button 
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:id="@+id/button02"
-      android:text="判断题。"  />
+      android:text="判断题"  />
      
   
 </LinearLayout>
