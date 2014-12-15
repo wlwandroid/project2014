@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+-<LinearLayout android:orientation="vertical" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+<TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:text="请选择你要提出的问题类型:" android:gravity="center" android:textSize="30dp"/>
+
+
+-<RadioGroup android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="选择题" android:textSize="30dp" android:layout_gravity="center"/>
+
+<RadioButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="判断题" android:textSize="30dp" android:layout_gravity="center"/>
+
+</RadioGroup>
+
+</LinearLayout>
