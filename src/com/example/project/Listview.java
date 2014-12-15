@@ -121,7 +121,7 @@ public class Listview extends Activity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				  Intent intent = new Intent();
-				   intent.setClass(Listview.this, choose1.class);
+				   intent.setClass(Listview.this, choose_select.class);
 				   startActivity(intent);
 			}
            

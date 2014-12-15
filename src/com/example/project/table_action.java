@@ -133,7 +133,7 @@ public class table_action extends Activity{
 					   int choose_num = cursor.getInt(choose_numindex);
 					   params.add(new BasicNameValuePair("type",choose_num+""));
 					   //////////////////////////答案组件
-					   for(int i=0;i<choose_num;i++) {
+					   for(int i=0;i<4;i++) {
 					   char temp=(char)('A'+i);
 					   int Aindex = cursor.getColumnIndex(temp+"");
 					   String A = cursor.getString(Aindex);

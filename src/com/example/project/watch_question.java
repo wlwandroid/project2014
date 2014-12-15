@@ -39,12 +39,20 @@ public class watch_question extends Activity{
 			    button3 = (Button)findViewById(R.id.bt03);
 			    id.setText(Listview.myid+"");
 			    context.setText("       "+Listview.title);
+			    if(Listview.choose_num == 4){
 			    optionA.setText("A. "+Listview.A);
 			    optionB.setText("B. "+Listview.B);
 			    optionC.setText("c. "+Listview.C);
 			    optionD.setText("D. "+Listview.D);
 			    key_text.setText("答案为： "+(char)(Listview.key+'A'-1)); 
-			    
+			    }
+			    else if(Listview.choose_num == 2){
+			    optionA.setText("");
+				optionB.setText("");
+				optionC.setText("A.是");
+				optionD.setText("B.不是");
+				key_text.setText("答案为： "+(char)(Listview.key+'A'-1)); 	
+			    }
 			    button1.setOnClickListener(new OnClickListener() {
 					
 					@Override
@@ -64,8 +72,14 @@ public class watch_question extends Activity{
 						// TODO Auto-generated method stub
 						//db.delete("Answertable", "_id=?",new String[] {Listview.myid+""});
 					        flag = true ;
+					        if(Listview.choose_num == 4){
 					        Intent intent = new Intent(watch_question.this,choose1.class);
 					        startActivity(intent);
+					        }
+					        if(Listview.choose_num == 2){
+						        Intent intent = new Intent(watch_question.this,choose2.class);
+						        startActivity(intent);
+						    }
 					}
 				});
                 button3.setOnClickListener(new OnClickListener() {

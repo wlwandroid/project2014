@@ -10,7 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class choose extends Activity{
-	OnClickListener listen1;
+	 OnClickListener listen1;
 	 private Button add;
 	 int choose_number=0;
 	   @Override 
