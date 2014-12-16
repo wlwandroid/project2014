@@ -38,7 +38,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class table_openaction extends Activity{
-	private static String TAG = "table_action";
+	private static String TAG = "table_openaction";
 	public static String papername = "";
 	/////////////////////////////////////
 	//POST模块
